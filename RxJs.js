@@ -9,8 +9,5 @@ requestStream.subscribe(function(requestUrl) {
 
 // request
   var responseStream = Rx.Observable.create(function (observer) {
-    jQuery.getJSON(requestUrl, function(responseData) {
-
-    })
-  })
+    
 })
