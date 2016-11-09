@@ -9,5 +9,20 @@ requestStream.subscribe(function(requestUrl) {
 
 // request
   var responseStream = Rx.Observable.create(function (observer) {
-    
+    jQuery.getJSON(requestUrl)
+    .done(function(response) {
+      observer.onNext(response);
+    })
+    .fail(function(jqXHR, status, error) {
+      observer.onError(error);
+    })
+    .always(function() {
+      observer.onCompleted();
+    });
+  });
+
+  responseStream.subscribe(function(response) {
+// do something with the response
+
+  });
 })
