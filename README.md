@@ -12,4 +12,8 @@ Core features:
 Using GitHub API for User data.
   http://devdocs.io/jquery/jquery.getjson
 
-  
+ReactiveX main site:
+  http://reactivex.io/
+
+RxJS extensions main:
+  https://github.com/Reactive-Extensions/RxJS
